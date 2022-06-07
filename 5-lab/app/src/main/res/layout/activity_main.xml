@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFBA99F4"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/numberInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="number"
+        android:layout_marginBottom="36dp"
+        android:inputType="textPersonName"
+        android:textColor="#673AB7"
+        android:textSize="26dp"/>
+
+    <TextView
+        android:id="@+id/inputError"
+        android:layout_width="326dp"
+        android:layout_height="53dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#8F337B"
+        android:textSize="23sp"
+        android:layout_marginBottom="56dp"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/firstNumber"
+        android:layout_width="323dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#673AB7"
+        android:layout_marginBottom="46dp"
+        android:textSize="26dp"/>
+
+    <TextView
+        android:id="@+id/secondNumber"
+        android:layout_width="324dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#673AB7"
+        android:layout_marginBottom="146dp"
+        android:textSize="23dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/calculateBtn"
+        android:layout_width="263dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="80dp"
+        android:text="Calculate"
+        android:textColor="#FFFFFF"
+        android:textSize="23dp"
+        app:backgroundTint="#673AB7" />
+
+</LinearLayout>

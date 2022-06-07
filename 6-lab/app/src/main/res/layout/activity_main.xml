@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFBA99F4"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/dotsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="26dp"
+        android:text=" А(0,6), В(1,5), С(3,3), D(2,4)"
+        android:textColor="#3F51B5"
+        android:textSize="24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/thresholdLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="46dp"
+            android:text="P = "
+            android:textColor="#3F51B5"
+            android:textSize="24dp" />
+
+        <EditText
+            android:id="@+id/thresholdInput"
+            android:layout_width="76dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="92dp"
+            android:layout_marginBottom="36dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="4"
+            android:inputType="number"
+            android:textColor="#673AB7"
+            android:textSize="24dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/learningRateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="46dp"
+            android:paddingTop="3dp"
+            android:text="Learning rate: "
+            android:textColor="#3F51B5"
+            android:textSize="24dp" />
+
+        <Spinner
+            android:id="@+id/learningRateSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3F51B5"
+            android:textSize="19dp"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/deadlineLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="46dp"
+            android:text="Deadile: "
+            android:paddingTop="5dp"
+            android:textColor="#3F51B5"
+            android:textSize="24dp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/timeDeadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#3F51B5"
+                android:textSize="19dp"
+                android:checked="true"
+                android:text="time (seconds)"/>
+
+            <RadioButton
+                android:id="@+id/iterationsDeadline"
+                android:layout_width="wrap_content"
+                android:textSize="19dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:textColor="#3F51B5"
+                android:text="iterations"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/timeDeadlineSpinner"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/iterationsDeadlineSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/weights1Output"
+        android:layout_width="357dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#673AB7"
+        android:layout_marginBottom="30dp"
+        android:textSize="23dp" />
+
+    <TextView
+        android:id="@+id/weights2Output"
+        android:layout_width="357dp"
+        android:layout_height="43dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#673AB7"
+        android:layout_marginBottom="30dp"
+        android:textSize="23dp" />
+
+    <TextView
+        android:id="@+id/iterationsOutput"
+        android:layout_width="357dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:textColor="#673AB7"
+        android:layout_marginBottom="20dp"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/calcTime"
+        android:layout_width="357dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:textColor="#673AB7"
+        android:layout_marginBottom="15dp"
+        android:textSize="25dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/calculateBtn"
+        android:layout_width="263dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Calculate"
+        android:textColor="#FFFFFF"
+        android:textSize="23dp"
+        app:backgroundTint="#673AB7" />
+
+</LinearLayout>
